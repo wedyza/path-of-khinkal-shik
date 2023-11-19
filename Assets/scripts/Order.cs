@@ -6,15 +6,15 @@ using UnityEngine;
 public class Order : MonoBehaviour
 {
     [SerializeField] private GameObject go;
-    [SerializeField] List<Dish> dishes = new List<Dish>();
     [NonSerialized] readonly List<Dish> _selectedDishes;
+    [SerializeField] Player _player;
 
     public int Price
     {
         get
         {
             int sum = 0;
-            foreach (Dish dish in dishes)
+            foreach (Dish dish in _selectedDishes)
             {
                 sum += dish.price;
             }
@@ -26,7 +26,7 @@ public class Order : MonoBehaviour
     public Order()
     {
         Debug.Log("А я работаю?");
-        _selectedDishes = dishes;
+        _selectedDishes = _player.dishes;
     }
     
     public void Start()

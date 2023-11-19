@@ -6,4 +6,5 @@ public class Product : MonoBehaviour
 {
     [SerializeField] private GameObject go;
     [SerializeField] private string name;
+    bool isAviable;
 }
