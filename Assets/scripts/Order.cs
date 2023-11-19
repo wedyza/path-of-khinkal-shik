@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Interfaces;
 using UnityEngine;
 
-public class Order : MonoBehaviour
+public class Order : MonoBehaviour, IDough
 {
     [SerializeField] private GameObject go;
     [SerializeField] List<Dish> dishes = new List<Dish>();
@@ -27,9 +28,5 @@ public class Order : MonoBehaviour
     {
         Debug.Log("А я работаю?");
         _selectedDishes = dishes;
-    }
-    
-    public void Start()
-    {
     }
 }
