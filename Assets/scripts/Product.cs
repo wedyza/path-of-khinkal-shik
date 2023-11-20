@@ -5,7 +5,5 @@ using UnityEngine;
 
 public class Product : MonoBehaviour, IFilling
 {
-    [SerializeField] private GameObject go;
-    [SerializeField] private string name;
-    bool isAviable;
+    public bool isAviable;
 }
