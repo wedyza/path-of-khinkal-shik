@@ -9,4 +9,5 @@ public class Dish : MonoBehaviour
 
     [SerializeField] private Product[] products;
     [SerializeField] public int price;
+    [SerializeField] private bool isLiquid;
 }

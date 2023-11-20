@@ -10,6 +10,7 @@ public class GameContoller : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
+        Screen.SetResolution(736, 414, true);
     }
     void Update()
     {
