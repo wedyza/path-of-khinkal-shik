@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class GameContoller : MonoBehaviour
 {
-    [SerializeField] Order order;
-
     [SerializeField] private Transform pos;
+    [SerializeField] private Player player;
+    public Order order;
+
+    private List<Order> _orders;
     // Update is called once per frame
-    void Start()
+    void Start()                        
     {
-        Screen.SetResolution(736, 414, true);
     }
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
-        {
+        { 
             Instantiate(order);
         }
     }

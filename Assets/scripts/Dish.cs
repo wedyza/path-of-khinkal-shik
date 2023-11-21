@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Dish : MonoBehaviour
 {
-    [SerializeField] private GameObject go;
-    [SerializeField] private string name;
-
-    [SerializeField] private Product[] products;
-    [SerializeField] public int price;
-    [SerializeField] private bool isLiquid;
+    public Product[] products;
+    public int price;
+    private bool isLiquid;
 }

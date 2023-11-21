@@ -1,14 +1,16 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using Interfaces;
 using UnityEngine;
+using TMPro;
 
-public class Order : MonoBehaviour
+public class Order : MonoBehaviour, IDough
 {
-    [SerializeField] private GameObject go;
-    [NonSerialized] readonly List<Dish> _selectedDishes;
-    [SerializeField] Player _player;
-
+    [NonSerialized] List<Dish> _selectedDishes;
+    [SerializeField] private List<Dish> dishes;
+    public TextMeshProUGUI dish;
+    public TextMeshProUGUI products;
+    public GameObject gameObject;
     public int Price
     {
         get
@@ -23,13 +25,18 @@ public class Order : MonoBehaviour
         }
     }
 
-    public Order()
+    void Awake()
     {
-        Debug.Log("А я работаю?");
-        _selectedDishes = _player.dishes;
+        _selectedDishes = dishes;
+        dish.text = _selectedDishes[0].name;
+        products.text = Parse(_selectedDishes[0].products);
     }
-    
-    public void Start()
+
+    string Parse(Product[] products)
     {
+        string answer = "";
+        foreach (var i in products)
+            answer += i.name + " ";
+        return answer;
     }
 }

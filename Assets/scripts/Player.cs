@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] int maxNumberOfClients;
-    [SerializeField] int intervalBetweenClients;
+    public int maxNumberOfClients;
+    public int intervalBetweenClients;
 
-    [SerializeField] int cookingTime;
+    public int cookingTime;
 
-    [SerializeField] int tips;
+    public int tips;
 
-    [SerializeField] int money;
+    public int money;
 
-    [SerializeField] public List<Dish> dishes;
+    public List<Dish> dishes;
 
-    public Player()
+    void Start()
     {
         maxNumberOfClients = 1;
         intervalBetweenClients = 5;
         cookingTime = 5;
         tips = 0;
         money = 0;
-        dishes = new List<Dish>();
     }
 }
