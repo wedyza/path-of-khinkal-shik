@@ -7,6 +7,7 @@ TagManager:
   - dough
   - meat
   - khinkali
+  - drag
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - order
-  - 
+  - AlwaysOnTop
   - 
   - 
   - 
@@ -41,9 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: AlwaysOnTop
+    uniqueID: 2639110637
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: New Layer 1
-    uniqueID: 4261382147
     locked: 0
