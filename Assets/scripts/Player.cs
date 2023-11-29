@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
 
     public int money;
 
-    public List<Dish> dishes;
-
     void Start()
     {
         maxNumberOfClients = 1;

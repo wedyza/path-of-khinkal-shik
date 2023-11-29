@@ -6,8 +6,10 @@ public class GameContoller : MonoBehaviour
 {
     [SerializeField] private Transform pos;
     [SerializeField] private Player player;
+    
+    /*
     public Order order;
-
+    
     private List<Order> _orders;
     // Update is called once per frame
     void Start()                        
@@ -20,4 +22,5 @@ public class GameContoller : MonoBehaviour
             Instantiate(order);
         }
     }
+    */
 }

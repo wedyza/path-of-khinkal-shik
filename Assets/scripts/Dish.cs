@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dish : MonoBehaviour
+public interface IDish
 {
-    public Product[] products;
-    public int price;
-    private bool isLiquid;
+    public List<Product> ProductsIn { get; set; }
+    public bool IsCooked { get; set; }
+    public void AddProduct(Product product);
 }
+    

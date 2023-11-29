@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Interfaces;
 using UnityEngine;
 using TMPro;
-
+/*
 public class Order : MonoBehaviour, IDough
 {
     [NonSerialized] List<Dish> _selectedDishes;
@@ -40,3 +40,4 @@ public class Order : MonoBehaviour, IDough
         return answer;
     }
 }
+*/
