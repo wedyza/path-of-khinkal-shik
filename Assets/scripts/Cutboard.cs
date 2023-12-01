@@ -6,31 +6,24 @@ using UnityEngine.EventSystems;
 public class Cutboard : Drop
 {
     public Khinkali khinkali;
+    private Khinkali created;
     
     public override void OnDrop(PointerEventData eventData)
     {
-        Transform otherItemTransform;
-        Khinkali created = new Khinkali();
-        otherItemTransform = eventData.pointerDrag.transform;
-        Debug.Log("before if");
+        var otherItemTransform = eventData.pointerDrag.transform;
         if (eventData.pointerDrag.CompareTag("dough"))
         {
-            Debug.Log("creating dish");
             if (gameObject.transform.childCount > 0)
-            {
-                Debug.Log("Уже готовится хинкалина ебаная");
                 return;
-            }
-                created = Instantiate(khinkali);
-                otherItemTransform = created.transform;
-                created.transform.localScale /= 100;
+            created = Instantiate(khinkali);
+            otherItemTransform = created.transform;
+            created.transform.localScale /= 100;
         }
-        else if (gameObject.transform.childCount > 0)
+        else if (gameObject.transform.childCount > 0 && created != null)
         {
             created.OnDrop(eventData);
             return;
         }
-        Debug.Log("after if");
         otherItemTransform.SetParent(transform);
         otherItemTransform.localPosition = Vector3.zero;
     }

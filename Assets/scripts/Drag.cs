@@ -12,7 +12,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     private GameObject drag;
     private Vector2 lastPos;
 
-    void Start()
+    void Awake()
     {
         drag = GameObject.FindWithTag("drag");
         _canvasGroup = GetComponent<CanvasGroup>();
@@ -20,7 +20,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         _rectTransform = GetComponent<RectTransform>();
     }
     
-    public void OnDrag(PointerEventData eventData)
+    public virtual void OnDrag(PointerEventData eventData)
     {
         _rectTransform.anchoredPosition += eventData.delta / _mainCanvas.scaleFactor;
         lastPos = _rectTransform.anchoredPosition;
@@ -32,10 +32,10 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         _canvasGroup.blocksRaycasts = false;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public virtual void OnEndDrag(PointerEventData eventData)
     {
         _canvasGroup.blocksRaycasts = true;
         if (lastPos == _rectTransform.anchoredPosition)
-            Destroy(gameObject);
+            _rectTransform.localPosition = Vector3.zero;
     }
 }
