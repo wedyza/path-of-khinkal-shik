@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.U2D;
 using UnityEngine.UI;
 
 public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IDropHandler
@@ -85,6 +86,7 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         if (mouseDownEncounter == 2)
         {
             imgObj.sprite = sprite;
+            transform.localScale = new Vector2(33f/100f, 34f/100f);
             IsCooked = true;
             for (int i = 0; i < transform.childCount; i++)
             {
