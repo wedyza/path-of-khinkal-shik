@@ -86,7 +86,7 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         if (mouseDownEncounter == 2)
         {
             imgObj.sprite = sprite;
-            transform.localScale = new Vector2(33f/100f, 34f/100f);
+            transform.localScale = new Vector2(33f/78f, 34f/63f);
             IsCooked = true;
             for (int i = 0; i < transform.childCount; i++)
             {

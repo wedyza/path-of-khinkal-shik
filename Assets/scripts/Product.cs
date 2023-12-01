@@ -23,6 +23,9 @@ public class Product : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     private GameObject drag;
     private Vector2 lastPos;
 
+    [SerializeField] float newWidth;
+    [SerializeField] float newHeight;
+
     void Start()
     {
         _mainCanvas = GetComponentInParent<Canvas>();
@@ -68,6 +71,7 @@ public class Product : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
 
     public void Cut()
     {
+        transform.localScale = new Vector2(newWidth / _imageObj.rectTransform.rect.width, newHeight / _imageObj.rectTransform.rect.height); 
         _imageObj.sprite = sprite;
         _isCutted = true;
     }
