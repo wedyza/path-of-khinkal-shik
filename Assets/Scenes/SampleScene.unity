@@ -718,8 +718,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &130133626
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1341,8 +1341,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &203536831
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5746,8 +5746,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1041205479
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7139,8 +7139,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1237679990
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8452,8 +8452,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1496567665
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9319,8 +9319,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1670652332
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9637,8 +9637,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1704819525
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10424,8 +10424,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &1883556212
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12244,8 +12244,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  newWidth: 0
-  newHeight: 0
+  newWidth: 77
+  newHeight: 56
 --- !u!225 &2090700671
 CanvasGroup:
   m_ObjectHideFlags: 0
