@@ -215,6 +215,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &14818284
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -319,6 +321,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &15083151
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -423,6 +427,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 68ade203038fb2b4b9fa7073d0cb2fc2, type: 3}
+  newWidth: 66
+  newHeight: 44
 --- !u!225 &25854968
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -712,6 +718,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &130133626
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -816,6 +824,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &134730455
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -919,6 +929,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!1 &166013646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1023,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &166013651
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1115,6 +1129,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 1
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &173634420
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1219,6 +1235,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &187451907
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1323,6 +1341,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &203536831
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1502,6 +1522,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &265151221
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1606,6 +1628,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &276666124
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1710,6 +1734,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 81d7a259cdbabfe49865efc13d291ad4, type: 3}
+  newWidth: 83
+  newHeight: 70
 --- !u!225 &280635073
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1854,6 +1880,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &351964607
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2039,6 +2067,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &386098997
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2250,6 +2280,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &409768131
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2390,6 +2422,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &450173303
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2494,6 +2528,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &461842678
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2978,6 +3014,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!1 &561635358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,6 +3259,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &584123563
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3325,6 +3365,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &601837721
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3428,6 +3470,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!1 &658006046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,6 +3564,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &658006051
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3624,6 +3670,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &666849246
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3728,6 +3776,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &680987717
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3832,6 +3882,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &683617992
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4092,6 +4144,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &747640071
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4195,6 +4249,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!1 &767144487
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,6 +4554,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &795449661
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4585,6 +4643,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829859103}
   m_CullTransparentMesh: 1
+--- !u!1 &844164247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844164249}
+  - component: {fileID: 844164248}
+  m_Layer: 0
+  m_Name: Scenes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &844164248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844164247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cdcfeb0182dd4640bc577a7b249b863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &844164249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844164247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.113930784, y: -0.6793605, z: 4.858182}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844340229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4752,6 +4854,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 0f990416e0ae63c40af9784cee0c9cea, type: 3}
+  newWidth: 79
+  newHeight: 70
 --- !u!225 &859290672
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4980,6 +5084,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &935133942
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5084,6 +5190,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &943808566
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5188,6 +5296,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &954188912
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5292,6 +5402,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &988511023
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5385,7 +5497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 997608759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 844164248}
+        m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &997608759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5516,6 +5640,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1019937978
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5620,6 +5746,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1041205479
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5799,6 +5927,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1112045589
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5984,6 +6114,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1141536665
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6088,6 +6220,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1149458298
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6192,6 +6326,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1158473425
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6296,6 +6432,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1177167661
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6400,6 +6538,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1192241945
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6787,6 +6927,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1228306834
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6891,6 +7033,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1233071729
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6995,6 +7139,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1237679990
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7099,6 +7245,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 7947587c2f760a44993c2589d02ecff0, type: 3}
+  newWidth: 85
+  newHeight: 76
 --- !u!225 &1252263274
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7418,6 +7566,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1281834239
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7679,6 +7829,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1361676886
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7783,6 +7935,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: ac3daf5c6eb1221498c0b99d2f6eb146, type: 3}
+  newWidth: 63
+  newHeight: 50
 --- !u!225 &1376894864
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8018,6 +8172,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1433637826
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8190,6 +8346,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1495556279
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8294,6 +8452,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1496567665
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8398,6 +8558,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1499079016
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8502,6 +8664,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1532031339
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8606,6 +8770,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1557499373
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8710,6 +8876,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1580336649
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9151,6 +9319,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1670652332
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9255,6 +9425,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1679237196
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9359,6 +9531,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1696484369
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9463,6 +9637,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1704819525
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9761,6 +9937,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!1 &1804331126
 GameObject:
   m_ObjectHideFlags: 0
@@ -9853,6 +10031,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1804331131
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9957,6 +10137,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 7c9bcba2cf6325c44b1917c582bbee83, type: 3}
+  newWidth: 84
+  newHeight: 69
 --- !u!225 &1808647173
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10136,6 +10318,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1856061745
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10240,6 +10424,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1883556212
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10386,6 +10572,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1932208958
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10532,6 +10720,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1940636842
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10636,6 +10826,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1945956124
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10785,6 +10977,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1972061364
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11039,6 +11233,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &1987174109
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11260,6 +11456,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2000277834
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11364,6 +11562,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2050067759
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11468,6 +11668,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2059786359
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11572,6 +11774,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2067290654
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11676,6 +11880,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2067584993
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11826,6 +12032,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2076378013
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11930,6 +12138,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2086367576
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12034,6 +12244,8 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
+  newWidth: 0
+  newHeight: 0
 --- !u!225 &2090700671
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12214,3 +12426,4 @@ SceneRoots:
   - {fileID: 1444781813}
   - {fileID: 1957323697}
   - {fileID: 1118624033}
+  - {fileID: 844164249}
