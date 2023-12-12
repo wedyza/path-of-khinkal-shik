@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     int min = 3;
     int delta = 1;
     [SerializeField] TMP_Text _timerText;
+    public GameObject panel;
     void Start()
     {
         StartCoroutine(ITimer());
@@ -19,6 +20,11 @@ public class Timer : MonoBehaviour
     { 
         while (true) 
         {
+            if (min == 0 && sec == 0)
+            {
+                panel.SetActive(true);
+                break;
+            }
             if (sec == 0)
             {
                 min--;
