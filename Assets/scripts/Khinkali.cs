@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.U2D;
 using UnityEngine.UI;
 
-public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IDropHandler
+public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IPointerDownHandler
 {
     private RectTransform _rectTransform;
     private Canvas _mainCanvas;
@@ -45,12 +45,28 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         if (product != null && (product.productType == Product.ProductType.meat ||
                                 product.productType == Product.ProductType.vegetable))
         {
+            var type = product.productType;
+            foreach (var p in ProductsIn)
+            {
+                if (p.productType == type)
+                    return; // тут можно вызвать сообщение, что продукт такого типа уже находится внутри хинкали
+            }
+            
             product.Cut();
             ProductsIn.Add(product);
         
             var otherItemTransform = eventData.pointerDrag.transform;
             otherItemTransform.SetParent(transform);
             otherItemTransform.localPosition = Vector3.zero;
+            switch (type)
+            {
+                case Product.ProductType.vegetable:
+                    otherItemTransform.SetAsLastSibling();
+                    break;
+                case Product.ProductType.meat:
+                    otherItemTransform.SetAsFirstSibling();
+                    break;
+            }
         }
     }
 
@@ -78,10 +94,12 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         _canvasGroup.blocksRaycasts = false;
     }
 
-    void OnMouseDown()
+    public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("Start of script");
         if (IsCooked)
             return;
+        Debug.Log("After if statement");
         mouseDownEncounter += 1;
         if (mouseDownEncounter == 2)
         {
@@ -91,7 +109,7 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
             for (int i = 0; i < transform.childCount; i++)
             {
                 var child = transform.GetChild(i);
-                gameObject.name = "НАСТОЯЩАЯ ХИНКАЛИНА(ЕБАНАЯ)";
+                gameObject.name = "НАСТОЯЩАЯ ХИНКАЛИНА";
                 Destroy(child.gameObject);
             }
 

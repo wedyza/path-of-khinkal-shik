@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 25854968}
   m_Layer: 5
   m_Name: onion
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 130133626}
   m_Layer: 5
   m_Name: cow1
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 134736262}
   m_Layer: 5
   m_Name: lobiani
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,7 +1022,7 @@ GameObject:
   - component: {fileID: 166013651}
   m_Layer: 5
   m_Name: bottleWater
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1340,7 +1340,7 @@ GameObject:
   - component: {fileID: 203536831}
   m_Layer: 5
   m_Name: chicken1
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1733,7 +1733,7 @@ GameObject:
   - component: {fileID: 280635073}
   m_Layer: 5
   m_Name: potato
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3224,7 +3224,7 @@ GameObject:
   - component: {fileID: 526812931}
   m_Layer: 5
   m_Name: achma
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3680,7 +3680,7 @@ GameObject:
   - component: {fileID: 649402690}
   m_Layer: 5
   m_Name: adjarian
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 761988768}
   m_Layer: 5
   m_Name: megrelian
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5064,7 +5064,7 @@ GameObject:
   - component: {fileID: 859290672}
   m_Layer: 5
   m_Name: carrot
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,7 +5925,7 @@ GameObject:
   - component: {fileID: 1019937978}
   m_Layer: 5
   m_Name: bottleSoda2
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6743,7 +6743,7 @@ GameObject:
   - component: {fileID: 1158473425}
   m_Layer: 5
   m_Name: bottleSoda1
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7662,7 +7662,7 @@ GameObject:
   - component: {fileID: 1252263274}
   m_Layer: 5
   m_Name: tomato
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8352,7 +8352,7 @@ GameObject:
   - component: {fileID: 1376894864}
   m_Layer: 5
   m_Name: pepper
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8915,7 +8915,7 @@ GameObject:
   - component: {fileID: 1496567665}
   m_Layer: 5
   m_Name: ram1
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10532,7 +10532,7 @@ GameObject:
   - component: {fileID: 1783381101}
   m_Layer: 5
   m_Name: mchadi
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10732,7 +10732,7 @@ GameObject:
   - component: {fileID: 1808647173}
   m_Layer: 5
   m_Name: mushrooms
-  m_TagString: Untagged
+  m_TagString: product
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12864,6 +12864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070434539}
   - component: {fileID: 2070434538}
+  - component: {fileID: 2070434540}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12900,6 +12901,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2070434540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070434537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa47477966c03284ba86259b530b9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076378008
 GameObject:
   m_ObjectHideFlags: 0
