@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class GameContoller : MonoBehaviour
@@ -18,7 +19,10 @@ public class GameContoller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         { 
-            Instantiate(order);
+            var newOrder = Instantiate(order, order.transform.position, quaternion.identity);
+            newOrder.transform.SetParent(order.transform.parent);
+            newOrder.transform.localScale = order.transform.localScale;
+            newOrder.transform.SetAsFirstSibling();
         }
     }
 }

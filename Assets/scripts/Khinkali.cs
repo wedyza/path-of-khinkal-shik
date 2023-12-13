@@ -96,10 +96,8 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Start of script");
         if (IsCooked)
             return;
-        Debug.Log("After if statement");
         mouseDownEncounter += 1;
         if (mouseDownEncounter == 2)
         {
@@ -111,11 +109,6 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 var child = transform.GetChild(i);
                 gameObject.name = "НАСТОЯЩАЯ ХИНКАЛИНА";
                 Destroy(child.gameObject);
-            }
-
-            foreach (var p in ProductsIn)
-            {
-                Debug.Log(p.productType);
             }
         }
     }
