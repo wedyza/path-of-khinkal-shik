@@ -11,11 +11,13 @@ public class Order : MonoBehaviour
     private List<Product> _meats;
     private List<Product> _drinks;
     private List<Product> _groceries;
+    private GameObject[] _people;
 
     private Product _chosenMeat;
     private Product _chosenVegetable1;
     private Product _chosenDrink;
     private Product _chosenGrocery;
+    private GameObject _chosenPerson;
 
     public bool IsSample;
     void Fill()
@@ -47,6 +49,7 @@ public class Order : MonoBehaviour
                     break;
             }
         }
+        _people = GameObject.FindGameObjectsWithTag("person");
     }
 
     void Start()
@@ -73,6 +76,13 @@ public class Order : MonoBehaviour
         _chosenVegetable1.transform.SetParent(vegetableBox);
         _chosenVegetable1.transform.localPosition = Vector3.zero;
         _chosenVegetable1.transform.localScale = randomVegetable.transform.localScale;
+
+        var randomPerson = _people[new Random().Next(_people.Length)];
+        _chosenPerson = Instantiate(randomPerson);
+        var personBox = transform.GetChild(4);
+        _chosenPerson.transform.SetParent(personBox);
+        _chosenPerson.transform.localPosition = Vector3.zero;
+        _chosenPerson.transform.localScale = randomVegetable.transform.localScale;
         
         
         if (rnd.Next(1, 3) * 2 - 3 > 0)

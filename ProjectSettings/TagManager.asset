@@ -9,6 +9,9 @@ TagManager:
   - drag
   - Canvas
   - product
+  - meat
+  - person
+  - order
   layers:
   - Default
   - TransparentFX
