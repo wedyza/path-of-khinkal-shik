@@ -12,6 +12,7 @@ TagManager:
   - meat
   - person
   - order
+  - personOnScene
   layers:
   - Default
   - TransparentFX

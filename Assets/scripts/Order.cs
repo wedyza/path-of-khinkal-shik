@@ -78,6 +78,8 @@ public class Order : MonoBehaviour
         _chosenVegetable1.transform.localScale = randomVegetable.transform.localScale;
 
         var randomPerson = _people[new Random().Next(_people.Length)];
+        randomPerson.tag = "personOnScene";
+        //при выдаче заказа надо будет на person менять
         _chosenPerson = Instantiate(randomPerson);
         var personBox = transform.GetChild(4);
         _chosenPerson.transform.SetParent(personBox);
