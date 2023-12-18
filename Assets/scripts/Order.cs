@@ -4,8 +4,10 @@ using Interfaces;
 using UnityEngine;
 using TMPro;
 using Random = System.Random;
+using UnityEngine.EventSystems;
+using UnityEngine.U2D;
 
-public class Order : MonoBehaviour
+public class Order : MonoBehaviour, IPointerDownHandler
 {
     private List<Product> _vegetables;
     private List<Product> _meats;
@@ -18,6 +20,9 @@ public class Order : MonoBehaviour
     private Product _chosenDrink;
     private Product _chosenGrocery;
     private GameObject _chosenPerson;
+    private GameObject randomPerson;
+
+    [SerializeField] GameObject tray;
 
     public bool IsSample;
     void Fill()
@@ -77,9 +82,8 @@ public class Order : MonoBehaviour
         _chosenVegetable1.transform.localPosition = Vector3.zero;
         _chosenVegetable1.transform.localScale = randomVegetable.transform.localScale;
 
-        var randomPerson = _people[new Random().Next(_people.Length)];
+        randomPerson = _people[new Random().Next(_people.Length)];
         randomPerson.tag = "personOnScene";
-        //при выдаче заказа надо будет на person менять
         _chosenPerson = Instantiate(randomPerson);
         var personBox = transform.GetChild(4);
         _chosenPerson.transform.SetParent(personBox);
@@ -109,4 +113,21 @@ public class Order : MonoBehaviour
     }
 
     Product ChooseProduct(List<Product> l) => l[new Random().Next(l.Count)];
+
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (true)
+        {
+            for (int i = 0; i < tray.transform.childCount; i++)
+            {
+                var child = tray.transform.GetChild(i);
+                Destroy(child.gameObject);
+            }
+            randomPerson.tag = "person";
+            _people = GameObject.FindGameObjectsWithTag("person");
+            GameContoller.timeFromLastVisitor = 0;
+            Destroy(gameObject);
+        }
+    }
 }

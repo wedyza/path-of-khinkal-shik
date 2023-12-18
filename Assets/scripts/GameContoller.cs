@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using System.Linq;
+using System;
 
 public class GameContoller : MonoBehaviour
 {
     [SerializeField] private Transform pos;
     [SerializeField] private Player player;
     private float orderPositionX;
-    private int timeFromLastVisitor = 0;
+    static public int timeFromLastVisitor = 0;
+    bool flag;
 
     public Order order;
 
@@ -17,13 +20,19 @@ public class GameContoller : MonoBehaviour
     void Start()                        
     {
         StartCoroutine(CallMethodAfterDelay());
+        orderPositionX = 2;
     }
     void Update()
     {
         if (GameObject.FindGameObjectsWithTag("order").Length < 3 && timeFromLastVisitor >= 2)
         {
-            var ordersCount = GameObject.FindGameObjectsWithTag("order").Length;
-            orderPositionX = (200 - ordersCount * 245) / 100f;
+            var orders = GameObject.FindGameObjectsWithTag("order");
+            for (var i = 0; i < 3; i++)
+                if (Array.TrueForAll(orders, x => x.transform.localPosition.x != (200 - i * 245)))
+                {
+                    orderPositionX = (200 - i * 245) / 100f;
+                    break;
+                }
             var newOrder = Instantiate(order, new Vector3(orderPositionX, 1.27f, 280), quaternion.identity);
             newOrder.tag = "order";
             newOrder.transform.SetParent(order.transform.parent);

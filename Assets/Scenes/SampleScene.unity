@@ -277,7 +277,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -379,7 +379,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &14818284
@@ -486,7 +485,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &15083151
@@ -579,7 +577,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -681,7 +679,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 68ade203038fb2b4b9fa7073d0cb2fc2, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 66
   newHeight: 44
 --- !u!225 &25854968
@@ -973,7 +970,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &130133626
@@ -1080,7 +1076,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &134730455
@@ -1186,7 +1181,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!1 &166013646
@@ -1281,7 +1275,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &166013651
@@ -1388,7 +1381,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 1
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &173634420
@@ -1495,7 +1487,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &187451907
@@ -1602,7 +1593,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &203536831
@@ -1784,7 +1774,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &265151221
@@ -1891,7 +1880,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &276666124
@@ -1998,7 +1986,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 81d7a259cdbabfe49865efc13d291ad4, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 83
   newHeight: 70
 --- !u!225 &280635073
@@ -2145,7 +2132,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &351964607
@@ -2333,7 +2319,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &386098997
@@ -2547,7 +2532,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &409768131
@@ -2690,7 +2674,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &450173303
@@ -2797,7 +2780,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &461842678
@@ -3495,7 +3477,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!1 &561635358
@@ -3741,7 +3722,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &584123563
@@ -3848,7 +3828,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &601837721
@@ -3954,7 +3933,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!1 &658006046
@@ -4049,7 +4027,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &658006051
@@ -4156,7 +4133,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &666849246
@@ -4263,7 +4239,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &680987717
@@ -4370,7 +4345,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &683617992
@@ -4633,7 +4607,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &747640071
@@ -4739,7 +4712,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!1 &767144487
@@ -5045,7 +5017,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &795449661
@@ -5346,7 +5317,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 0f990416e0ae63c40af9784cee0c9cea, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 79
   newHeight: 70
 --- !u!225 &859290672
@@ -5577,7 +5547,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &935133942
@@ -5684,7 +5653,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &943808566
@@ -5791,7 +5759,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &954188912
@@ -5973,7 +5940,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &988511023
@@ -6212,7 +6178,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1019937978
@@ -6319,7 +6284,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1041205479
@@ -6487,7 +6451,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6589,7 +6553,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1112045589
@@ -6909,7 +6872,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1141536665
@@ -7016,7 +6978,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1149458298
@@ -7123,7 +7084,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1158473425
@@ -7230,7 +7190,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1177167661
@@ -7337,7 +7296,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1192241945
@@ -7727,7 +7685,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1228306834
@@ -7834,7 +7791,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1233071729
@@ -7941,7 +7897,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1237679990
@@ -8048,7 +8003,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 7947587c2f760a44993c2589d02ecff0, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 85
   newHeight: 76
 --- !u!225 &1252263274
@@ -8370,7 +8324,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1281834239
@@ -8463,7 +8416,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8722,7 +8675,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1361676886
@@ -8829,7 +8781,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: ac3daf5c6eb1221498c0b99d2f6eb146, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 63
   newHeight: 50
 --- !u!225 &1376894864
@@ -9067,7 +9018,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1433637826
@@ -9288,7 +9238,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1495556279
@@ -9395,7 +9344,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1496567665
@@ -9502,7 +9450,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1499079016
@@ -9609,7 +9556,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1532031339
@@ -9716,7 +9662,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1557499373
@@ -9823,7 +9768,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1580336649
@@ -10267,7 +10211,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1670652332
@@ -10374,7 +10317,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1679237196
@@ -10481,7 +10423,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1696484369
@@ -10588,7 +10529,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1704819525
@@ -10696,6 +10636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa47477966c03284ba86259b530b9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tray: {fileID: 1666638713}
   IsSample: 1
 --- !u!1 &1742638459
 GameObject:
@@ -11040,7 +10981,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 4
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!1 &1804331126
@@ -11135,7 +11075,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1804331131
@@ -11242,7 +11181,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 2
   sprite: {fileID: 21300000, guid: 7c9bcba2cf6325c44b1917c582bbee83, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 84
   newHeight: 69
 --- !u!225 &1808647173
@@ -11424,7 +11362,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1856061745
@@ -11531,7 +11468,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &1883556212
@@ -11755,7 +11691,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1932208958
@@ -11904,7 +11839,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1940636842
@@ -11997,7 +11931,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12099,7 +12033,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1945956124
@@ -12251,7 +12184,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1972061364
@@ -12508,7 +12440,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &1987174109
@@ -12829,7 +12760,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2000277834
@@ -13068,7 +12998,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2050067759
@@ -13175,7 +13104,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2059786359
@@ -13282,7 +13210,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2067290654
@@ -13389,7 +13316,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2067584993
@@ -13543,7 +13469,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2076378013
@@ -13650,7 +13575,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 3
   sprite: {fileID: 0}
-  _imageObj: {fileID: 0}
   newWidth: 0
   newHeight: 0
 --- !u!225 &2086367576
@@ -13757,7 +13681,6 @@ MonoBehaviour:
   isAviable: 0
   productType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
-  _imageObj: {fileID: 0}
   newWidth: 77
   newHeight: 56
 --- !u!225 &2090700671
