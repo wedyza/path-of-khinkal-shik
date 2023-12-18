@@ -117,7 +117,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (true)
+        if (IsEqual())
         {
             for (int i = 0; i < tray.transform.childCount; i++)
             {
@@ -129,5 +129,38 @@ public class Order : MonoBehaviour, IPointerDownHandler
             GameContoller.timeFromLastVisitor = 0;
             Destroy(gameObject);
         }
+    }
+
+    public bool IsEqual()
+    {
+        var correctDrink = false;
+        var correctGrocery = false;
+        //var correctKhinkali = new bool[];
+        for (int i = 0; i < tray.transform.childCount; i++)
+        {
+            Product childProduct = tray.transform.GetChild(i).GetComponent<Product>();
+            Khinkali childKhinkali = tray.transform.GetChild(i).GetComponent<Khinkali>();
+            if (childProduct != null && childProduct.productType == Product.ProductType.drink)
+                if (_chosenDrink != null)
+                { 
+                    if (childProduct.drinkType == _chosenDrink.drinkType && !correctDrink)
+                        correctDrink = true;
+                    else return false;
+                }
+
+
+            if (childProduct != null && childProduct.productType == Product.ProductType.grocery)
+                if (_chosenGrocery != null)
+                {
+                    if (childProduct.groceryType == _chosenGrocery.groceryType && !correctGrocery)
+                        correctGrocery = true;
+                    else return false;
+                }
+            /*if (childKhinkali != null)
+            {
+                Debug.Log("childKhinkali");
+            }*/
+        }
+        return correctDrink && correctGrocery;
     }
 }

@@ -378,6 +378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -484,6 +486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -678,6 +682,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 68ade203038fb2b4b9fa7073d0cb2fc2, type: 3}
   newWidth: 66
   newHeight: 44
@@ -969,6 +975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -1075,6 +1083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1102,6 +1112,7 @@ GameObject:
   - component: {fileID: 134736261}
   - component: {fileID: 134736260}
   - component: {fileID: 134736262}
+  - component: {fileID: 134736263}
   m_Layer: 5
   m_Name: lobiani
   m_TagString: product
@@ -1180,9 +1191,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 4
+  drinkType: 0
+  groceryType: 3
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
+--- !u!225 &134736263
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134736258}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &166013646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1380,6 +1407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 1
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1486,6 +1515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1592,6 +1623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
   newWidth: 77
   newHeight: 56
@@ -1773,6 +1806,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1879,6 +1914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -1985,6 +2022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 81d7a259cdbabfe49865efc13d291ad4, type: 3}
   newWidth: 83
   newHeight: 70
@@ -2131,6 +2170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -2318,6 +2359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -2531,6 +2574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -2673,6 +2718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -2779,6 +2826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -3398,6 +3447,7 @@ GameObject:
   - component: {fileID: 526812930}
   - component: {fileID: 526812929}
   - component: {fileID: 526812931}
+  - component: {fileID: 526812932}
   m_Layer: 5
   m_Name: achma
   m_TagString: product
@@ -3476,9 +3526,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 4
+  drinkType: 0
+  groceryType: 1
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
+--- !u!225 &526812932
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526812927}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &561635358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,6 +3785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -3827,6 +3893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -3854,6 +3922,7 @@ GameObject:
   - component: {fileID: 649402689}
   - component: {fileID: 649402688}
   - component: {fileID: 649402690}
+  - component: {fileID: 649402691}
   m_Layer: 5
   m_Name: adjarian
   m_TagString: product
@@ -3932,9 +4001,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 4
+  drinkType: 0
+  groceryType: 2
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
+--- !u!225 &649402691
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649402686}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &658006046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4026,6 +4109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -4132,6 +4217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -4238,6 +4325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -4344,6 +4433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -4606,6 +4697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -4633,6 +4726,7 @@ GameObject:
   - component: {fileID: 761988767}
   - component: {fileID: 761988766}
   - component: {fileID: 761988768}
+  - component: {fileID: 761988769}
   m_Layer: 5
   m_Name: megrelian
   m_TagString: product
@@ -4711,9 +4805,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 4
+  drinkType: 0
+  groceryType: 4
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
+--- !u!225 &761988769
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761988764}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &767144487
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -5316,6 +5426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 0f990416e0ae63c40af9784cee0c9cea, type: 3}
   newWidth: 79
   newHeight: 70
@@ -5546,6 +5658,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -5652,6 +5766,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -5758,6 +5874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -5939,6 +6057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -6177,6 +6297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -6283,6 +6405,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -6552,6 +6676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -6871,6 +6997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -6977,6 +7105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7083,6 +7213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7189,6 +7321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7295,6 +7429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7684,6 +7820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7790,6 +7928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -7896,6 +8036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -8002,6 +8144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 7947587c2f760a44993c2589d02ecff0, type: 3}
   newWidth: 85
   newHeight: 76
@@ -8323,6 +8467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -8674,6 +8820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -8780,6 +8928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: ac3daf5c6eb1221498c0b99d2f6eb146, type: 3}
   newWidth: 63
   newHeight: 50
@@ -9017,6 +9167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -9237,6 +9389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -9343,6 +9497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 94aa0f79ba015294ea0f550eabb98fc6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -9449,6 +9605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -9555,6 +9713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -9661,6 +9821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -9767,6 +9929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -10210,6 +10374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -10316,6 +10482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -10422,6 +10590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -10528,6 +10698,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: dad07c341cdc3164980710f317a163e6, type: 3}
   newWidth: 77
   newHeight: 56
@@ -10902,6 +11074,7 @@ GameObject:
   - component: {fileID: 1783381100}
   - component: {fileID: 1783381099}
   - component: {fileID: 1783381101}
+  - component: {fileID: 1783381102}
   m_Layer: 5
   m_Name: mchadi
   m_TagString: product
@@ -10980,9 +11153,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 4
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
+--- !u!225 &1783381102
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783381097}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1804331126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11074,6 +11261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -11180,6 +11369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 2
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: 7c9bcba2cf6325c44b1917c582bbee83, type: 3}
   newWidth: 84
   newHeight: 69
@@ -11361,6 +11552,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -11467,6 +11660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
   newWidth: 77
   newHeight: 56
@@ -11690,6 +11885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -11838,6 +12035,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -12032,6 +12231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -12183,6 +12384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -12439,6 +12642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -12759,6 +12964,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -12997,6 +13204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13103,6 +13312,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13209,6 +13420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13315,6 +13528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13468,6 +13683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 2
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13574,6 +13791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 3
+  drinkType: 1
+  groceryType: 0
   sprite: {fileID: 0}
   newWidth: 0
   newHeight: 0
@@ -13680,6 +13899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAviable: 0
   productType: 0
+  drinkType: 0
+  groceryType: 0
   sprite: {fileID: 21300000, guid: b2c654678b27388418e17f551a39ba0a, type: 3}
   newWidth: 77
   newHeight: 56

@@ -13,6 +13,8 @@ public class Product : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
 {
     public bool isAviable;
     public ProductType productType; 
+    public int drinkType;
+    public int groceryType;
     public Sprite sprite;
 
     private Image _imageObj;
