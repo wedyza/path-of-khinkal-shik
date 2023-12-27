@@ -16,9 +16,12 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     private Vector3 startPos;
     private int mouseDownEncounter;
     private Image imgObj;
-
+    
     public Sprite sprite;
-
+    
+    public List<Product> ProductsIn { get; set; }
+    public bool IsCooked { get; set; }
+    public bool IsBoiled { get; set; }
     void Start()
     {
         _mainCanvas = GetComponentInParent<Canvas>();
@@ -29,14 +32,12 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         mouseDownEncounter = 0;
         ProductsIn = new List<Product>();
         IsCooked = false;
+        IsBoiled = false;
         drag = GameObject.FindWithTag("drag");
         _canvasGroup = GetComponent<CanvasGroup>();
         _rectTransform = GetComponent<RectTransform>();
         imgObj = GetComponent<Image>();
     }
-
-    public List<Product> ProductsIn { get; set; }
-    public bool IsCooked { get; set; }
     
     public void OnDrop(PointerEventData eventData)
     {
