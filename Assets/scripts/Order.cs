@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using Interfaces;
 using UnityEngine;
 using TMPro;
 using Random = System.Random;
 using UnityEngine.EventSystems;
 using UnityEngine.U2D;
+using Debug = UnityEngine.Debug;
 
 public class Order : MonoBehaviour, IPointerDownHandler
 {
@@ -21,7 +24,9 @@ public class Order : MonoBehaviour, IPointerDownHandler
     private Product _chosenGrocery;
     private GameObject _chosenPerson;
     private GameObject randomPerson;
-
+    private int khinkalisCount;
+    
+    public TextMeshProUGUI _textMeshPro;
     [SerializeField] GameObject tray;
 
     public bool IsSample;
@@ -74,6 +79,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
         _chosenMeat.transform.SetParent(meatBox);
         _chosenMeat.transform.localPosition = Vector3.zero;
         _chosenMeat.transform.localScale = randomMeat.transform.localScale;
+        _chosenMeat.GetComponent<CanvasGroup>().blocksRaycasts = false;
 
         var randomVegetable = ChooseProduct(_vegetables);
         _chosenVegetable1 = Instantiate(randomVegetable);
@@ -81,6 +87,10 @@ public class Order : MonoBehaviour, IPointerDownHandler
         _chosenVegetable1.transform.SetParent(vegetableBox);
         _chosenVegetable1.transform.localPosition = Vector3.zero;
         _chosenVegetable1.transform.localScale = randomVegetable.transform.localScale;
+        _chosenVegetable1.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        
+        khinkalisCount = rnd.Next(1, 4);
+        _textMeshPro.text = "x" + khinkalisCount.ToString();
 
         randomPerson = _people[new Random().Next(_people.Length)];
         randomPerson.tag = "personOnScene";
@@ -99,6 +109,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
             _chosenDrink.transform.SetParent(drinkBox);
             _chosenDrink.transform.localPosition = Vector3.zero;
             _chosenDrink.transform.localScale = randomDrink.transform.localScale;
+            _chosenDrink.GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
 
         if (rnd.Next(1, 3) * 2 - 3 < 0)
@@ -109,6 +120,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
             _chosenGrocery.transform.SetParent(groceryBox);
             _chosenGrocery.transform.localScale = randomGrocery.transform.localScale;
             _chosenGrocery.transform.localPosition = Vector3.zero;
+            _chosenGrocery.GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
     }
 
@@ -135,7 +147,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
     {
         var correctDrink = false;
         var correctGrocery = false;
-        //var correctKhinkali = new bool[];
+        var correctKhinkali = new List<bool>();
         for (int i = 0; i < tray.transform.childCount; i++)
         {
             Product childProduct = tray.transform.GetChild(i).GetComponent<Product>();
@@ -156,11 +168,29 @@ public class Order : MonoBehaviour, IPointerDownHandler
                         correctGrocery = true;
                     else return false;
                 }
-            /*if (childKhinkali != null)
+            
+            if (childKhinkali != null)
             {
-                Debug.Log("childKhinkali");
-            }*/
+                if (childKhinkali.IsCooked && childKhinkali.IsBoiled)
+                {
+                    int counter = 2;
+                    foreach (var product in childKhinkali.ProductsIn)
+                        if (product.LogicField == _chosenMeat.LogicField ||
+                            product.LogicField == _chosenVegetable1.LogicField)
+                            counter--;
+                    if (counter == 0)
+                        correctKhinkali.Add(true);
+                    else
+                        correctKhinkali.Add(false);
+                }
+            }
         }
-        return correctDrink && correctGrocery;
+
+        if (_chosenDrink == null)
+            correctDrink = true;
+        if (_chosenGrocery == null)
+            correctGrocery = true;
+        
+        return correctDrink && correctGrocery && !correctKhinkali.Contains(false) && khinkalisCount == correctKhinkali.Count;
     }
 }

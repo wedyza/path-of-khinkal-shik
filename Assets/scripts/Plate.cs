@@ -9,5 +9,6 @@ public class Plate : MonoBehaviour
         khinkalina.transform.SetParent(transform);
         khinkalina.transform.localPosition = Vector3.zero;
         khinkalina.gameObject.SetActive(true);
+        khinkalina.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

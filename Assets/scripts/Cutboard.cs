@@ -24,6 +24,8 @@ public class Cutboard : Drop
             created.OnDrop(eventData);
             return;
         }
+        else
+            return;
         otherItemTransform.SetParent(transform);
         otherItemTransform.localPosition = Vector3.zero;
     }

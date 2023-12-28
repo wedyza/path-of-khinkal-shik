@@ -16,6 +16,7 @@ public class Product : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     public int drinkType;
     public int groceryType;
     public Sprite sprite;
+    public string LogicField;
 
     private Image _imageObj;
     private bool _isCutted;

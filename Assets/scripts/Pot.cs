@@ -17,7 +17,7 @@ public class Pot : MonoBehaviour, IDropHandler
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Boil();
+            StartCoroutine(Boil());
         }
     }
     
@@ -36,12 +36,12 @@ public class Pot : MonoBehaviour, IDropHandler
         }
     }
 
-    void Boil()
+    IEnumerator Boil()
     {
         if (_khinkalis.Count > 0)
         {
             SpriteUpdater(true);
-            new WaitForSeconds(5);
+            yield return new WaitForSeconds(5);
             while (_khinkalis.Count > 0)
             {
                 _khinkalis[0].IsBoiled = true;
