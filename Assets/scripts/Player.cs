@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log(maxNumberOfClients);
             Debug.Log(cookingTime);
-            Debug.Log(money);
+            Debug.Log(currentBackgroundIndex);
         }
     }
 }

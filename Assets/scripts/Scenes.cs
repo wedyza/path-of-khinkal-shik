@@ -11,11 +11,6 @@ public class Scenes : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneNumber);
-        if (sceneNumber == 1)
-        {
-            var player = FindObjectOfType<Player>();
-            Debug.Log(player.currentBackgroundIndex);
-            _imageObj.sprite = player.backgrounds[player.currentBackgroundIndex];
-        }
+        
     }
 }

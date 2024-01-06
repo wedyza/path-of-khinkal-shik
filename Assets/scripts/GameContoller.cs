@@ -10,7 +10,7 @@ public class GameContoller : MonoBehaviour
     [SerializeField] private Transform pos;
     [SerializeField] private Player player;
     private float orderPositionX;
-    static public int timeFromLastVisitor = 0;
+    static public int timeFromLastVisitor;
     bool flag;
 
     public Order order;
@@ -21,6 +21,7 @@ public class GameContoller : MonoBehaviour
     {
         StartCoroutine(CallMethodAfterDelay());
         orderPositionX = 2;
+        timeFromLastVisitor = 0;
     }
     void Update()
     {

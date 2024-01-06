@@ -24,6 +24,7 @@ public class Timer : MonoBehaviour
             if (min == 0 && sec == 0)
             {
                 panel.SetActive(true);
+                Time.timeScale = 0f;
                 break;
             }
             if (sec == 0)
