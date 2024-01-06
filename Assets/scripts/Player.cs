@@ -21,4 +21,15 @@ public class Player : MonoBehaviour
         tips = 0;
         money = 0;
     }
+
+    void Update()
+    {
+        DontDestroyOnLoad(gameObject);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log(maxNumberOfClients);
+            Debug.Log(cookingTime);
+            Debug.Log(money);
+        }
+    }
 }

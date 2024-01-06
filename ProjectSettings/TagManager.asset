@@ -13,6 +13,7 @@ TagManager:
   - person
   - order
   - personOnScene
+  - player
   layers:
   - Default
   - TransparentFX
