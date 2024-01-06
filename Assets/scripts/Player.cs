@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Player : MonoBehaviour
 
     public int money;
 
+    public List<Sprite> backgrounds;
+
+    public int currentBackgroundIndex;
+
     void Start()
     {
         maxNumberOfClients = 1;
@@ -20,6 +25,7 @@ public class Player : MonoBehaviour
         cookingTime = 5;
         tips = 0;
         money = 0;
+        currentBackgroundIndex = 0;
     }
 
     void Update()

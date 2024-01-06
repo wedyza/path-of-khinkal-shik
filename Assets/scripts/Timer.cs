@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         StartCoroutine(ITimer());
+        //Debug.Log("timer");
     }
 
     IEnumerator ITimer()

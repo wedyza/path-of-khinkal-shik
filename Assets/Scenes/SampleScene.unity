@@ -3070,6 +3070,8 @@ MonoBehaviour:
   cookingTime: 0
   tips: 0
   money: 0
+  backgrounds: []
+  currentBackgroundIndex: 0
 --- !u!4 &479081012
 Transform:
   m_ObjectHideFlags: 0
@@ -5349,6 +5351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cdcfeb0182dd4640bc577a7b249b863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _imageObj: {fileID: 0}
 --- !u!4 &844164249
 Transform:
   m_ObjectHideFlags: 0
