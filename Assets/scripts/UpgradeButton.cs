@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class UpgradeButton : MonoBehaviour
+public class UpgradeButton : MonoBehaviour, IPointerClickHandler
 {
     TextMeshProUGUI text;
-    int price = 100;
     Player player;
+    [SerializeField] string characteristic;
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -15,18 +16,21 @@ public class UpgradeButton : MonoBehaviour
     }
     private void Update()
     {
-        text.text = price.ToString();
+        text.text = player.characteristics[characteristic].price.ToString();
     }
-    public void Upgrade(string characteristic)
+    public void Upgrade()
     {
         var ch = player.characteristics[characteristic];
-        if ((ch.step > 0 && ch.current < ch.maximum || ch.step < 0 && ch.current > ch.maximum) && player.money >= price)
+        if ((ch.step > 0 && ch.current < ch.maximum || ch.step < 0 && ch.current > ch.maximum) && player.money >= player.characteristics[characteristic].price)
         {
             ch.current += ch.step;
+            player.money -= player.characteristics[characteristic].price;
+            ch.price *= 2;
             player.characteristics[characteristic] = ch;
-            //Debug.Log(player.characteristics[characteristic].current);
-            player.money -= price;
-            price *= 2;
         }        
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Upgrade();
     }
 }

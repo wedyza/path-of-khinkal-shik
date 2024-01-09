@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Dictionary<string, (float current, float maximum, float step)> characteristics;
+    public Dictionary<string, (float current, float maximum, float step, int price)> characteristics;
 
     public int money;
 
@@ -17,12 +17,12 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        characteristics = new Dictionary<string, (float current, float maximum, float step)>()
+        characteristics = new Dictionary<string, (float current, float maximum, float step, int price)>()
         {
-            { "maxNumberOfClients", (current: 1, maximum: 3, step: 1) },
-            { "intervalBetweenClients", (current: 5, maximum: 1.5f, step: -0.5f) },
-            { "cookingTime", (current: 7, maximum: 1.5f, step: -0.5f) },
-            { "tips", (current: 0, maximum: 10, step: 1) },
+            { "maxNumberOfClients", (current: 1, maximum: 3, step: 1, price: 1) },
+            { "intervalBetweenClients", (current: 5, maximum: 1.5f, step: -0.5f, price: 2) },
+            { "cookingTime", (current: 7, maximum: 1.5f, step: -0.5f, price: 3) },
+            { "tips", (current: 0, maximum: 10, step: 1, price: 4) },
         };
         money = 0;
         currentBackgroundIndex = 0;
