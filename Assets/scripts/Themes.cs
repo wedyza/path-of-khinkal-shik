@@ -8,6 +8,16 @@ public class Themes : MonoBehaviour
     public void SwitchTheme(int themeIndex)
     {
         player = FindObjectOfType<Player>();
-        player.currentBackgroundIndex = themeIndex;
+        if (!player.backgrounds[themeIndex].isAvailable && player.money >= player.backgrounds[themeIndex].price)
+        {
+            player.money -= player.backgrounds[themeIndex].price;
+            var b = player.backgrounds[themeIndex];
+            b.isAvailable = true;
+            player.backgrounds[themeIndex] = b;
+        }
+        if (player.backgrounds[themeIndex].isAvailable)
+        {
+            player.currentBackgroundIndex = themeIndex;
+        }
     }
 }

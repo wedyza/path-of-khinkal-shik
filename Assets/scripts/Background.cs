@@ -11,6 +11,6 @@ public class Background : MonoBehaviour
     {
         imgObj = GetComponent<Image>();
         player = FindObjectOfType<Player>();
-        imgObj.sprite = player.backgrounds[player.currentBackgroundIndex];
+        imgObj.sprite = player.backgroundsSprites[player.currentBackgroundIndex];
     }
 }

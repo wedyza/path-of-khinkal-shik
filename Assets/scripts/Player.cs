@@ -8,10 +8,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Dictionary<string, (float current, float maximum, float step, int price)> characteristics;
+    public Dictionary<int, (bool isAvailable, int price)> backgrounds;
 
     public int money;
 
-    public List<Sprite> backgrounds;
+    public List<Sprite> backgroundsSprites;
 
     public int currentBackgroundIndex;
 
@@ -23,6 +24,13 @@ public class Player : MonoBehaviour
             { "intervalBetweenClients", (current: 5, maximum: 1.5f, step: -0.5f, price: 2) },
             { "cookingTime", (current: 7, maximum: 1.5f, step: -0.5f, price: 3) },
             { "tips", (current: 0, maximum: 10, step: 1, price: 4) },
+        };
+        backgrounds = new Dictionary<int, (bool isAvailable, int price)>()
+        {
+            { 0, (isAvailable: true, price: 0) },
+            { 1, (isAvailable: false, price: 250) },
+            { 2, (isAvailable: false, price: 250) },
+            { 3, (isAvailable: false, price: 500) },
         };
         money = 0;
         currentBackgroundIndex = 0;
