@@ -7,10 +7,10 @@ using UnityEngine.UI;
 public class Scenes : MonoBehaviour
 {
     [SerializeField] private Image _imageObj;
-    GameObject[] _players;
     public void ChangeScene(int sceneNumber)
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneNumber);
+        FindObjectOfType<Player>().moneyFromCurrentShift = 0;
     }
 }

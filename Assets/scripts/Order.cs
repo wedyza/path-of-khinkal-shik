@@ -147,6 +147,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
             GameContoller.timeFromLastVisitor = 0;
             Destroy(gameObject);
             player.money += price;
+            player.moneyFromCurrentShift += price;
             price = 0;
         }
     }

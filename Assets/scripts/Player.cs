@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Dictionary<int, (bool isAvailable, int price)> backgrounds;
 
     public int money;
+    public int moneyFromCurrentShift;
 
     public List<Sprite> backgroundsSprites;
 
@@ -20,10 +21,10 @@ public class Player : MonoBehaviour
     {
         characteristics = new Dictionary<string, (float current, float maximum, float step, int price)>()
         {
-            { "maxNumberOfClients", (current: 1, maximum: 3, step: 1, price: 1) },
-            { "intervalBetweenClients", (current: 5, maximum: 1.5f, step: -0.5f, price: 2) },
-            { "cookingTime", (current: 7, maximum: 1.5f, step: -0.5f, price: 3) },
-            { "tips", (current: 0, maximum: 10, step: 1, price: 4) },
+            { "maxNumberOfClients", (current: 1, maximum: 3, step: 1, price: 100) },
+            { "intervalBetweenClients", (current: 5, maximum: 1.5f, step: -0.5f, price: 100) },
+            { "cookingTime", (current: 7, maximum: 1.5f, step: -0.5f, price: 100) },
+            { "tips", (current: 0, maximum: 10, step: 1, price: 100) },
         };
         backgrounds = new Dictionary<int, (bool isAvailable, int price)>()
         {

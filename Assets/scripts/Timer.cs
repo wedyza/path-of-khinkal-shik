@@ -6,13 +6,17 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    Player player;
+    public TextMeshProUGUI textEnd;
+    public TextMeshProUGUI textTips;
     int sec = 0;
-    int min = 3;
+    int min = 1;
     int delta = 1;
     [SerializeField] TMP_Text _timerText;
     public GameObject panel;
     void Start()
     {
+        player = FindObjectOfType<Player>();
         StartCoroutine(ITimer());
         //Debug.Log("timer");
     }
@@ -24,6 +28,8 @@ public class Timer : MonoBehaviour
             if (min == 0 && sec == 0)
             {
                 panel.SetActive(true);
+                textEnd.text = "Заработано: " + player.moneyFromCurrentShift + " хинкалин";
+                textTips.text = "Чаевые: " + (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100)) + " хинкалин";
                 Time.timeScale = 0f;
                 break;
             }
