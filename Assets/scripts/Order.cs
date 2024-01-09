@@ -25,7 +25,11 @@ public class Order : MonoBehaviour, IPointerDownHandler
     private GameObject _chosenPerson;
     private GameObject randomPerson;
     private int khinkalisCount;
-    
+
+    int price;
+    int priceForOneDish = 50;
+    Player player;
+
     public TextMeshProUGUI _textMeshPro;
     [SerializeField] GameObject tray;
 
@@ -64,6 +68,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
 
     void Start()
     {
+        player = FindObjectOfType<Player>();
         if (IsSample)
         {
             IsSample = false;
@@ -135,11 +140,14 @@ public class Order : MonoBehaviour, IPointerDownHandler
             {
                 var child = tray.transform.GetChild(i);
                 Destroy(child.gameObject);
+                price += priceForOneDish;
             }
             randomPerson.tag = "person";
             _people = GameObject.FindGameObjectsWithTag("person");
             GameContoller.timeFromLastVisitor = 0;
             Destroy(gameObject);
+            player.money += price;
+            price = 0;
         }
     }
 

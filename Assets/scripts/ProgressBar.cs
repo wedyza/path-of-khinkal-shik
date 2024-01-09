@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    //public float maximum;
     Player player;
-    //float current;
     public int index;
     public Image mask;
     void Start()
@@ -28,6 +26,5 @@ public class ProgressBar : MonoBehaviour
             case 3:
                 mask.fillAmount = player.characteristics["tips"].current / player.characteristics["tips"].maximum; break;
         }
-        //mask.fillAmount = current/maximum;
     }
 }

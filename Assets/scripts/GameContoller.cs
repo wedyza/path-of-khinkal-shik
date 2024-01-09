@@ -12,11 +12,11 @@ public class GameContoller : MonoBehaviour
     [SerializeField] private Player player;
     private float orderPositionX;
     static public int timeFromLastVisitor;
-    bool flag;
+    //bool flag;
 
     public Order order;
 
-    private List<Order> _orders;
+    //private List<Order> _orders;
     // Update is called once per frame
     void Start()
     {
