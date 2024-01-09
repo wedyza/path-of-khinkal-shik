@@ -12,7 +12,5 @@ public class Background : MonoBehaviour
         imgObj = GetComponent<Image>();
         player = FindObjectOfType<Player>();
         imgObj.sprite = player.backgrounds[player.currentBackgroundIndex];
-        Debug.Log(player.currentBackgroundIndex);
-        Debug.Log(player.backgrounds.Count);
     }
 }

@@ -1752,6 +1752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LinkedPlate: {fileID: 1893480157}
+  player: {fileID: 0}
   FullIdle: {fileID: 21300000, guid: 092d66bb350f78246841e9aaee4d3092, type: 3}
   khinkalisIdle:
   - {fileID: 21300000, guid: 0c044cb6c8c08094fad0f592ef92e33d, type: 3}
@@ -2910,6 +2911,7 @@ GameObject:
   - component: {fileID: 469173184}
   - component: {fileID: 469173186}
   - component: {fileID: 469173185}
+  - component: {fileID: 469173187}
   m_Layer: 5
   m_Name: plate1
   m_TagString: Untagged
@@ -2974,6 +2976,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469173183}
   m_CullTransparentMesh: 1
+--- !u!114 &469173187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469173183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2197baf0bee74c148a3057a47aa64d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &475660235
 GameObject:
   m_ObjectHideFlags: 0
@@ -11034,7 +11048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f5f40874367d74390abba1e629c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LinkedPlate: {fileID: 1893480157}
+  LinkedPlate: {fileID: 469173187}
+  player: {fileID: 0}
   FullIdle: {fileID: 21300000, guid: 092d66bb350f78246841e9aaee4d3092, type: 3}
   khinkalisIdle:
   - {fileID: 21300000, guid: 0c044cb6c8c08094fad0f592ef92e33d, type: 3}

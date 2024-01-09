@@ -9,11 +9,16 @@ public class Pot : MonoBehaviour, IDropHandler
     private List<Khinkali> _khinkalis;
     public Plate LinkedPlate;
     private Image imgObj;
+    [SerializeField] private Player player;
 
     public Sprite FullIdle;
     public Sprite[] khinkalisIdle;
     public Sprite[] khinkalisOnFire;
-    
+    void Start()
+    {
+        player = FindObjectOfType<Player>();
+    }
+
     public void Awake()
     {
         _khinkalis = new List<Khinkali>();
@@ -45,7 +50,7 @@ public class Pot : MonoBehaviour, IDropHandler
         if (_khinkalis.Count > 0)
         {
             SpriteUpdater(true);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(player.characteristics["cookingTime"].current);
             while (_khinkalis.Count > 0)
             {
                 _khinkalis[0].IsBoiled = true;
