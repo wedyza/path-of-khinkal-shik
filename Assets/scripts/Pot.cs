@@ -24,15 +24,6 @@ public class Pot : MonoBehaviour, IDropHandler
         _khinkalis = new List<Khinkali>();
         imgObj = GetComponent<Image>();
     }
-    
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(Boil());
-        }
-    }
-    
     public void OnDrop(PointerEventData eventData)
     {
         var khinkalina = eventData.pointerDrag.gameObject.GetComponent<Khinkali>();
@@ -45,7 +36,7 @@ public class Pot : MonoBehaviour, IDropHandler
         }
     }
 
-    IEnumerator Boil()
+    public IEnumerator Boil()
     {
         if (_khinkalis.Count > 0)
         {
