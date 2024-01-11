@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using InstantGamesBridge;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -31,6 +32,8 @@ public class Timer : MonoBehaviour
                 textEnd.text = "Заработано: " + player.moneyFromCurrentShift + " хинкалин";
                 textTips.text = "Чаевые: " + (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100)) + " хинкалин";
                 Time.timeScale = 0f;
+                player.Save();
+                Bridge.advertisement.ShowBanner();
                 break;
             }
             if (sec == 0)

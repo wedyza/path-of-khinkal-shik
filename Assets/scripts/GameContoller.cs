@@ -4,6 +4,8 @@ using Unity.Mathematics;
 using UnityEngine;
 using System.Linq;
 using System;
+using InstantGamesBridge;
+using InstantGamesBridge.Modules.Platform;
 using UnityEngine.SceneManagement;
 
 public class GameContoller : MonoBehaviour
@@ -24,7 +26,9 @@ public class GameContoller : MonoBehaviour
         StartCoroutine(CallMethodAfterDelay());
         orderPositionX = 2;
         timeFromLastVisitor = 0;
+        Bridge.platform.SendMessage(PlatformMessage.GameReady);
     }
+
     void Update()
     {
         if (GameObject.FindGameObjectsWithTag("order").Length < player.characteristics["maxNumberOfClients"].current && timeFromLastVisitor >= player.characteristics["intervalBetweenClients"].current)
