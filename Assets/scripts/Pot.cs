@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class Pot : MonoBehaviour, IDropHandler
 {
     private List<Khinkali> _khinkalis;
-    public Plate LinkedPlate;
+    public Transform LinkedSpot;
+    private Plate LinkedPlate;
     private Image imgObj;
     [SerializeField] private Player player;
 
@@ -38,6 +39,7 @@ public class Pot : MonoBehaviour, IDropHandler
 
     public IEnumerator Boil()
     {
+        LinkedPlate = LinkedSpot.GetChild(0).GetComponent<Plate>();
         if (_khinkalis.Count > 0)
         {
             SpriteUpdater(true);
