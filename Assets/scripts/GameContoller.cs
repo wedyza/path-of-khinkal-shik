@@ -35,9 +35,13 @@ public class GameContoller : MonoBehaviour
         {
             var orders = GameObject.FindGameObjectsWithTag("order");
             for (var i = 0; i < 3; i++)
-                if (Array.TrueForAll(orders, x => x.transform.localPosition.x != (200 - i * 245) * (Screen.width / 736f)))
+                if (Array.TrueForAll(orders, x => x.transform.localPosition.x >= (200 - i * 245 + 100) || x.transform.localPosition.x <= (200 - i * 245-100)))
                 {
-                    orderPositionX = ((200 - i * 245) * (Screen.width / 736f)) / 100f;
+                    orderPositionX = ((200 - i * 245)) / 100f;
+                    Debug.Log(Screen.width);
+                    Debug.Log(Screen.height);
+                    Debug.Log((200 - i * 245));
+                    Debug.Log(orderPositionX);
                     break;
                 }
             var newOrder = Instantiate(order, new Vector3(orderPositionX, 1.27f, 280), quaternion.identity);
