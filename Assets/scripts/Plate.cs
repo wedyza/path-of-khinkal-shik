@@ -57,7 +57,6 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     {
         if (!_isMoved)
         {
-            Debug.Log(example);
             _child = Instantiate(example, transform.position, Quaternion.identity);
             _child.transform.SetParent(transform.parent);
             _child.transform.localScale = transform.localScale;

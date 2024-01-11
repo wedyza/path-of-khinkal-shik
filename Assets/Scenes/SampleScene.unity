@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f5f40874367d74390abba1e629c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LinkedSpot: {fileID: 303486774}
+  LinkedSpot: {fileID: 1400781807}
   player: {fileID: 0}
   FullIdle: {fileID: 21300000, guid: 092d66bb350f78246841e9aaee4d3092, type: 3}
   khinkalisIdle:
@@ -5525,7 +5525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2197baf0bee74c148a3057a47aa64d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  example: {fileID: 903534689}
 --- !u!225 &816133291
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6207,7 +6206,7 @@ GameObject:
   - component: {fileID: 903534690}
   m_Layer: 5
   m_Name: plate2 (1)
-  m_TagString: Untagged
+  m_TagString: example
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6224,7 +6223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2197baf0bee74c148a3057a47aa64d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  example: {fileID: 903534689}
 --- !u!225 &903534690
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -9472,7 +9470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2197baf0bee74c148a3057a47aa64d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  example: {fileID: 903534689}
 --- !u!114 &1238314810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11662,7 +11659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2197baf0bee74c148a3057a47aa64d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  example: {fileID: 903534689}
 --- !u!114 &1600230212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12548,7 +12544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f5f40874367d74390abba1e629c144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LinkedSpot: {fileID: 1400781807}
+  LinkedSpot: {fileID: 303486774}
   player: {fileID: 0}
   FullIdle: {fileID: 21300000, guid: 092d66bb350f78246841e9aaee4d3092, type: 3}
   khinkalisIdle:
