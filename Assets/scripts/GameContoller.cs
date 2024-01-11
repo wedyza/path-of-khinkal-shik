@@ -7,6 +7,7 @@ using System;
 using InstantGamesBridge;
 using InstantGamesBridge.Modules.Platform;
 using UnityEngine.SceneManagement;
+using UnityEngine.Profiling;
 
 public class GameContoller : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameContoller : MonoBehaviour
     //bool flag;
 
     public Order order;
+    private List<Order> orders;
 
     //private List<Order> _orders;
     // Update is called once per frame
@@ -27,29 +29,33 @@ public class GameContoller : MonoBehaviour
         orderPositionX = 2;
         timeFromLastVisitor = 0;
         Bridge.platform.SendMessage(PlatformMessage.GameReady);
+        orders = new List<Order>() { null, null, null };
     }
 
     void Update()
     {
         if (GameObject.FindGameObjectsWithTag("order").Length < player.characteristics["maxNumberOfClients"].current && timeFromLastVisitor >= player.characteristics["intervalBetweenClients"].current)
         {
-            var orders = GameObject.FindGameObjectsWithTag("order");
+            //var newOrder = gameObject.AddComponent<Order>();
+            //var orders = GameObject.FindGameObjectsWithTag("order");
             for (var i = 0; i < 3; i++)
-                if (Array.TrueForAll(orders, x => x.transform.localPosition.x >= (200 - i * 245 + 100) || x.transform.localPosition.x <= (200 - i * 245-100)))
+                /*if (Array.TrueForAll(orders, x => x.transform.localPosition.x >= (200 - i * 245 + 100) || x.transform.localPosition.x <= (200 - i * 245-100)))*/
+                if (orders[i] == null)
                 {
                     orderPositionX = ((200 - i * 245)) / 100f;
-                    Debug.Log(Screen.width);
-                    Debug.Log(Screen.height);
-                    Debug.Log((200 - i * 245));
-                    Debug.Log(orderPositionX);
-                    break;
-                }
-            var newOrder = Instantiate(order, new Vector3(orderPositionX, 1.27f, 280), quaternion.identity);
+                    var newOrder = Instantiate(order, new Vector3(orderPositionX, 1.27f, 280), quaternion.identity);
+                    orders[i] = newOrder;
             newOrder.tag = "order";
             newOrder.transform.SetParent(order.transform.parent);
             newOrder.transform.localScale = order.transform.localScale;
             newOrder.transform.SetSiblingIndex(1);
             timeFromLastVisitor = 0;
+                    /*Debug.Log(Screen.width);
+                    Debug.Log(Screen.height);
+                    Debug.Log((200 - i * 245));
+                    Debug.Log(orderPositionX);*/
+                    break;
+                }
         }
     }
 

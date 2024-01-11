@@ -11,6 +11,8 @@ public class Scenes : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneNumber);
-        FindObjectOfType<Player>().moneyFromCurrentShift = 0;
+        var player = FindObjectOfType<Player>();
+        player.moneyFromCurrentShift = 0;
+        //player.placesForOrders = new List<bool>() { true, true, true };
     }
 }

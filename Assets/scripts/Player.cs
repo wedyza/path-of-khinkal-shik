@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public int moneyFromCurrentShift;
 
     public List<Sprite> backgroundsSprites;
+    //public List<bool> placesForOrders;
 
     public int currentBackgroundIndex;
 
@@ -158,6 +159,7 @@ public class Player : MonoBehaviour
                 
         money = 0;
         currentBackgroundIndex = 0;
+        //placesForOrders = new List<bool>() { true, true, true };
     }
     
     private void OnStorageGetSaved(bool success)
