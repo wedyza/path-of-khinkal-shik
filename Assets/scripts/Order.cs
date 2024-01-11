@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Interfaces;
 using UnityEngine;
 using TMPro;
 using Random = System.Random;
@@ -160,7 +159,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
         for (int i = 0; i < tray.transform.childCount; i++)
         {
             Product childProduct = tray.transform.GetChild(i).GetComponent<Product>();
-            Khinkali childKhinkali = tray.transform.GetChild(i).GetComponent<Khinkali>();
+            Plate plateWithKhinkalis = tray.transform.GetChild(i).GetComponent<Plate>();
             if (childProduct != null && childProduct.productType == Product.ProductType.drink)
                 if (_chosenDrink != null)
                 { 
@@ -177,20 +176,27 @@ public class Order : MonoBehaviour, IPointerDownHandler
                         correctGrocery = true;
                     else return false;
                 }
-            
-            if (childKhinkali != null)
+
+            if (plateWithKhinkalis != null)
             {
-                if (childKhinkali.IsCooked && childKhinkali.IsBoiled)
+                for (int j = 0; j < plateWithKhinkalis.transform.childCount; j++)
                 {
-                    int counter = 2;
-                    foreach (var product in childKhinkali.ProductsIn)
-                        if (product.LogicField == _chosenMeat.LogicField ||
-                            product.LogicField == _chosenVegetable1.LogicField)
-                            counter--;
-                    if (counter == 0)
-                        correctKhinkali.Add(true);
-                    else
-                        correctKhinkali.Add(false);
+                    Khinkali childKhinkali = plateWithKhinkalis.transform.GetChild(i).GetComponent<Khinkali>();
+                    if (childKhinkali != null)
+                    {
+                        if (childKhinkali.IsCooked && childKhinkali.IsBoiled)
+                        {
+                            int counter = 2;
+                            foreach (var product in childKhinkali.ProductsIn)
+                                if (product.LogicField == _chosenMeat.LogicField ||
+                                    product.LogicField == _chosenVegetable1.LogicField)
+                                    counter--;
+                            if (counter == 0)
+                                correctKhinkali.Add(true);
+                            else
+                                correctKhinkali.Add(false);
+                        }
+                    }
                 }
             }
         }
