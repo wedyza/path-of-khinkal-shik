@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
                 panel.SetActive(true);
                 textEnd.text = "Заработано: " + player.moneyFromCurrentShift + " хинкалин";
                 textTips.text = "Чаевые: " + (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100)) + " хинкалин";
-                player.money += player.moneyFromCurrentShift * (int)(player.characteristics["tips"].current/100);
+                player.money += (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100));
                 Time.timeScale = 0f;
                 player.Save();
                 Bridge.advertisement.ShowBanner();
