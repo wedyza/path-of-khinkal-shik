@@ -16,7 +16,6 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     private Canvas _mainCanvas;
     private Plate _child;
     private bool _isMoved;
-    
     public Plate example;
 
     void Start()
