@@ -181,7 +181,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
             {
                 for (int j = 0; j < plateWithKhinkalis.transform.childCount; j++)
                 {
-                    Khinkali childKhinkali = plateWithKhinkalis.transform.GetChild(i).GetComponent<Khinkali>();
+                    Khinkali childKhinkali = plateWithKhinkalis.transform.GetChild(j).GetComponent<Khinkali>();
                     if (childKhinkali != null)
                     {
                         if (childKhinkali.IsCooked && childKhinkali.IsBoiled)

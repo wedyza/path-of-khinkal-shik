@@ -16,7 +16,7 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     private Canvas _mainCanvas;
     private Plate _child;
     private bool _isMoved;
-    public Plate example;
+    private Plate example;
 
     void Start()
     {
@@ -25,6 +25,7 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     
     void Awake()
     {
+        example = GameObject.FindWithTag("example").GetComponent<Plate>();
         _isMoved = false;
         _drag = GameObject.FindWithTag("drag");
         _canvasGroup = GetComponent<CanvasGroup>();
@@ -56,6 +57,7 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     {
         if (!_isMoved)
         {
+            Debug.Log(example);
             _child = Instantiate(example, transform.position, Quaternion.identity);
             _child.transform.SetParent(transform.parent);
             _child.transform.localScale = transform.localScale;
