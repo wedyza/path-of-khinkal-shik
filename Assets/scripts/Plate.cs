@@ -15,7 +15,8 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     private GameObject _drag;
     private Canvas _mainCanvas;
     private Plate _child;
-    
+    private bool _isMoved;
+
     public Plate example;
 
     void Start()
@@ -53,10 +54,14 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        _child = Instantiate(example, transform.position, Quaternion.identity);
-        _child.transform.SetParent(transform.parent);
-        _child.transform.localScale = transform.localScale;
-        _child.transform.SetAsLastSibling();
+        if (!_isMoved)
+        {
+            _child = Instantiate(example, transform.position, Quaternion.identity);
+            _child.transform.SetParent(transform.parent);
+            _child.transform.localScale = transform.localScale;
+            _child.transform.SetAsLastSibling();
+            _isMoved = true;
+        }
         _startPos = _rectTransform.anchoredPosition;
         _startParent = _rectTransform.parent;
         gameObject.transform.SetParent(_drag.transform);
@@ -71,6 +76,7 @@ public class Plate : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
             _rectTransform.SetParent(_startParent, false);
             _rectTransform.anchoredPosition = _startPos;
             Destroy(_child);
+            _isMoved = false;
         }
     }
 }
