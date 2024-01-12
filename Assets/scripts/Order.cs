@@ -148,6 +148,11 @@ public class Order : MonoBehaviour, IPointerDownHandler
             player.money += price;
             player.moneyFromCurrentShift += price;
             price = 0;
+            /*var orders = GameObject.FindGameObjectsWithTag("order");
+            for (int i = 0; i < orders.Length; i++)
+            {
+                //orders[i].transform.localPosition.x;
+            }*/
         }
     }
 
