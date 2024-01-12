@@ -14,12 +14,9 @@ public class GameContoller : MonoBehaviour
     [SerializeField] private Player player;
     private float orderPositionX;
     static public int timeFromLastVisitor;
-    //bool flag;
 
     public Order order;
 
-    //private List<Order> _orders;
-    // Update is called once per frame
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -27,6 +24,7 @@ public class GameContoller : MonoBehaviour
         orderPositionX = 2;
         timeFromLastVisitor = 0;
         Bridge.platform.SendMessage(PlatformMessage.GameReady);
+        Debug.Log(Screen.width);
     }
 
     void Update()
@@ -46,6 +44,11 @@ public class GameContoller : MonoBehaviour
             newOrder.transform.localScale = order.transform.localScale;
             newOrder.transform.SetSiblingIndex(1);
             timeFromLastVisitor = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.money += 500;
         }
     }
 
