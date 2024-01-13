@@ -15,6 +15,7 @@ TagManager:
   - personOnScene
   - player
   - example
+  - tutorial
   layers:
   - Default
   - TransparentFX
