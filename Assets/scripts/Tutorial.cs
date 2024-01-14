@@ -37,7 +37,8 @@ public class Tutorial : MonoBehaviour
     public void ResetTutorial()
     {
         currentSpriteIndex = 0;
-            _buttonLeft.gameObject.SetActive(false);
+        _buttonLeft.gameObject.SetActive(false);
+        _buttonRight.gameObject.SetActive(true);
     }
 
     private void Update()
