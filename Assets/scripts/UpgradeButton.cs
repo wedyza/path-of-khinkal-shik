@@ -20,6 +20,7 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     private void Update()
     {
         text.text = player.characteristics[characteristic].price.ToString();
+        if (player.characteristics[characteristic].current == player.characteristics[characteristic].maximum) gameObject.SetActive(false);
     }
     public void Upgrade()
     {
@@ -32,7 +33,6 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
             ch.price *= 2;
             player.characteristics[characteristic] = ch;
         }
-        if (ch.current == ch.maximum) gameObject.SetActive(false);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
