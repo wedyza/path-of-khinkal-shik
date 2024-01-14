@@ -14,6 +14,8 @@ public class Tutorial : MonoBehaviour
 
     public void ChangeSprite(int step)
     {
+        if (currentSpriteIndex < sprites.Count - 1 && step > 0 || currentSpriteIndex > 0 && step < 0) 
+            currentSpriteIndex += step;
         if (currentSpriteIndex == 0) _buttonLeft.gameObject.SetActive(false);
         else if (currentSpriteIndex == sprites.Count - 1) _buttonRight.gameObject.SetActive(false);
         else 
@@ -21,8 +23,6 @@ public class Tutorial : MonoBehaviour
             _buttonLeft.gameObject.SetActive(true);
             _buttonRight.gameObject.SetActive(true);
         }
-        if (currentSpriteIndex < sprites.Count - 1 && step > 0 || currentSpriteIndex > 0 && step < 0) 
-            currentSpriteIndex += step;
     }
 
     public void ResetTutorial()
