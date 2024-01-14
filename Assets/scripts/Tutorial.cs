@@ -11,9 +11,18 @@ public class Tutorial : MonoBehaviour
     [SerializeField] Image _imageObj;
     [SerializeField] Button _buttonRight;
     [SerializeField] Button _buttonLeft;
+    private Sounds sounds;
+    
+    public AudioClip clip;
 
+    void Start()
+    {
+        sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
+    }
+    
     public void ChangeSprite(int step)
     {
+        sounds.Play(clip);
         if (currentSpriteIndex < sprites.Count - 1 && step > 0 || currentSpriteIndex > 0 && step < 0) 
             currentSpriteIndex += step;
         if (currentSpriteIndex == 0) _buttonLeft.gameObject.SetActive(false);

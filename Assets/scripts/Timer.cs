@@ -16,9 +16,11 @@ public class Timer : MonoBehaviour
     int delta = 1;
     [SerializeField] TMP_Text _timerText;
     public GameObject panel;
+
+    public AudioClip clip;
     void Start()
     {
-        sounds = GetComponent<Sounds>();
+        sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
         player = FindObjectOfType<Player>();
         StartCoroutine(ITimer());
         //Debug.Log("timer");
@@ -30,7 +32,7 @@ public class Timer : MonoBehaviour
         {
             if (min == 0 && sec == 0)
             {
-                sounds.Play();
+                sounds.Play(clip);
                 panel.SetActive(true);
                 textEnd.text = "Заработано: " + player.moneyFromCurrentShift + " хинкалин";
                 textTips.text = "Чаевые: " + (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100)) + " хинкалин";

@@ -11,15 +11,16 @@ public class ScreenSwitchButton : MonoBehaviour, IPointerClickHandler
     public float moveDistance;
     public RectTransform firstTable;
     public RectTransform secondTable;
+    public AudioClip clip;
 
     void Start()
     {
-        sounds = GetComponent<Sounds>();
+        sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
     }
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        sounds.Play(volume:2f);
+        sounds.Play(clip, volume:2f);
         MoveObject(firstTable);
         MoveObject(secondTable);
     }

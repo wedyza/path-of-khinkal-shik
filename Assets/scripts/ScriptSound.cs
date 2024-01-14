@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ContinueGame : MonoBehaviour
+public class ScriptSound : MonoBehaviour
 {
-    private Sounds sounds;
-    public GameObject panel;
-
     public AudioClip clip;
-    void Start()
+
+    private Sounds sounds;
+
+    void Awake()
     {
         sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
     }
-    
-    public void Continue()
+
+    public void PlayON()
     {
         sounds.Play(clip);
-        panel.SetActive(false);
-        Time.timeScale = 1f;
     }
 }

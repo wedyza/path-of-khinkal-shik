@@ -24,6 +24,10 @@ public class Order : MonoBehaviour, IPointerDownHandler
     private GameObject _chosenPerson;
     private GameObject randomPerson;
     private int khinkalisCount;
+    private Sounds sounds;
+    
+    public AudioClip goodOrder;
+    public AudioClip badOrder;
 
     int price;
     int priceForOneDish = 50;
@@ -67,6 +71,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
 
     void Start()
     {
+        sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
         player = FindObjectOfType<Player>();
         if (IsSample)
         {
@@ -135,6 +140,7 @@ public class Order : MonoBehaviour, IPointerDownHandler
     {
         if (IsEqual())
         {
+            sounds.Play(goodOrder);
             for (int i = 0; i < tray.transform.childCount; i++)
             {
                 var child = tray.transform.GetChild(i);
@@ -154,6 +160,8 @@ public class Order : MonoBehaviour, IPointerDownHandler
                 //orders[i].transform.localPosition.x;
             }*/
         }
+        else
+            sounds.Play(badOrder);
     }
 
     public bool IsEqual()

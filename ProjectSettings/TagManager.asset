@@ -16,6 +16,7 @@ TagManager:
   - player
   - example
   - tutorial
+  - sounds
   layers:
   - Default
   - TransparentFX

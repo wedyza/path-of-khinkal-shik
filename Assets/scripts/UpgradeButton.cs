@@ -10,10 +10,12 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
     Player player;
     [SerializeField] string characteristic;
     private Sounds sounds;
+
+    public AudioClip clip;
     
     void Start()
     {
-        sounds = GetComponent<Sounds>();
+        sounds = GameObject.FindWithTag("sounds").GetComponent<Sounds>();
         player = FindObjectOfType<Player>();
         text = GetComponentInChildren<TextMeshProUGUI>();
     }
@@ -26,7 +28,7 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
         var ch = player.characteristics[characteristic];
         if ((ch.step > 0 && ch.current < ch.maximum || ch.step < 0 && ch.current > ch.maximum) && player.money >= player.characteristics[characteristic].price)
         {
-            sounds.Play();  
+            sounds.Play(clip);  
             ch.current += ch.step;
             player.money -= player.characteristics[characteristic].price;
             ch.price *= 2;
