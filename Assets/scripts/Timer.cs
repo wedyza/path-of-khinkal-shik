@@ -7,6 +7,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    private Sounds sounds;
     Player player;
     public TextMeshProUGUI textEnd;
     public TextMeshProUGUI textTips;
@@ -17,6 +18,7 @@ public class Timer : MonoBehaviour
     public GameObject panel;
     void Start()
     {
+        sounds = GetComponent<Sounds>();
         player = FindObjectOfType<Player>();
         StartCoroutine(ITimer());
         //Debug.Log("timer");
@@ -28,6 +30,7 @@ public class Timer : MonoBehaviour
         {
             if (min == 0 && sec == 0)
             {
+                sounds.Play();
                 panel.SetActive(true);
                 textEnd.text = "Заработано: " + player.moneyFromCurrentShift + " хинкалин";
                 textTips.text = "Чаевые: " + (int)(player.moneyFromCurrentShift * (player.characteristics["tips"].current/100)) + " хинкалин";

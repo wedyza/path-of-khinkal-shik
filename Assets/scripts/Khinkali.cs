@@ -16,7 +16,8 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     private Vector3 startPos;
     private int mouseDownEncounter;
     private Image imgObj;
-    
+    private Sounds sounds;
+
     public Sprite sprite;
     
     public List<Product> ProductsIn { get; set; }
@@ -24,6 +25,7 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public bool IsBoiled { get; set; }
     void Start()
     {
+        sounds = GetComponent<Sounds>();
         _mainCanvas = GetComponentInParent<Canvas>();
     }
     
@@ -102,6 +104,7 @@ public class Khinkali : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
         mouseDownEncounter += 1;
         if (mouseDownEncounter == 2)
         {
+            sounds.Play(1.5f, 1.5f);
             imgObj.sprite = sprite;
             transform.localScale = new Vector2(33f/78f, 34f/63f);
             IsCooked = true;

@@ -6,11 +6,20 @@ using UnityEngine.UI;
 
 public class ScreenSwitchButton : MonoBehaviour, IPointerClickHandler
 {
+    private Sounds sounds;
+    
     public float moveDistance;
     public RectTransform firstTable;
     public RectTransform secondTable;
+
+    void Start()
+    {
+        sounds = GetComponent<Sounds>();
+    }
+    
     public void OnPointerClick(PointerEventData eventData)
     {
+        sounds.Play(volume:2f);
         MoveObject(firstTable);
         MoveObject(secondTable);
     }

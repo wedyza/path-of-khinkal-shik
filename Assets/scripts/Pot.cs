@@ -11,12 +11,15 @@ public class Pot : MonoBehaviour, IDropHandler
     private Plate LinkedPlate;
     private Image imgObj;
     [SerializeField] private Player player;
+    private Sounds sounds;
 
     public Sprite FullIdle;
     public Sprite[] khinkalisIdle;
     public Sprite[] khinkalisOnFire;
+    
     void Start()
     {
+        sounds = GetComponent<Sounds>();
         player = FindObjectOfType<Player>();
     }
 
@@ -39,6 +42,7 @@ public class Pot : MonoBehaviour, IDropHandler
 
     public IEnumerator Boil()
     {
+        sounds.Play(player.characteristics["cookingTime"].current);
         LinkedPlate = LinkedSpot.GetChild(0).GetComponent<Plate>();
         if (_khinkalis.Count > 0)
         {
