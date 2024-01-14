@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI textEnd;
     public TextMeshProUGUI textTips;
     int sec = 0;
-    int min = 1;
+    int min = 2;
     int delta = 1;
     [SerializeField] TMP_Text _timerText;
     public GameObject panel;

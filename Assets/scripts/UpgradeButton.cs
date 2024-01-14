@@ -31,7 +31,8 @@ public class UpgradeButton : MonoBehaviour, IPointerClickHandler
             player.money -= player.characteristics[characteristic].price;
             ch.price *= 2;
             player.characteristics[characteristic] = ch;
-        }        
+        }
+        if (ch.current == ch.maximum) gameObject.SetActive(false);
     }
     public void OnPointerClick(PointerEventData eventData)
     {
